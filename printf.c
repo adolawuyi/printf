@@ -41,9 +41,7 @@ int _printf(const char *format, ...)
 				? pfunc(arguments, &flags)
 				: _printf("%%%c", *p);
 		} else
-		{
 			count += _putchar(*p);
-		}
 	}
 	_putchar(-1);
 	va_end(arguments);
